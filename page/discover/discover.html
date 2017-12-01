@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>发现</title>
+	<script src="../../js/base/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+	<link rel="stylesheet" href="../../css/jquery-weui.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<style type="text/css">
+	.market{
+		line-height:35px;
+	}
+	.market>div{	
+		padding-left: 30px;
+	}
+	.list{
+		padding-left: 30px;
+		background-color:#fff;
+	}
+	.list li{
+		line-height:25px;
+		font-size:13px;
+		color:#8B8B8B;
+	}
+	
+	.list li span{
+	    float: right;
+    	padding-right: 18px;
+	}
+	
+	.overhidden {
+	    display: inline-block;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    vertical-align: middle;
+	}
+	.menu_nav>div{
+		width:49%;
+		display:inline-block;
+		height: 40px;
+	}
+	</style>
+</head>
+<body>
+	<div class="app-topbar">
+		<div class="left app-button" data-back="" onclick="goBack('../../index.html')"></div>
+		<div class="app-title">发现</div>
+	</div>
+	<div style="background-color:#fff;line-height:30px;padding: 50px 10px 0 10px;margin-bottom: 10px;">
+		<div class="arrowrt" ><span class="overhidden" style="width:75%">积分享生活</span><span class="overhidden" style="float: right;margin-right: 15px;font-size: 13px;text-align: right;">更多</span></div>
+		<div class="menu_nav">
+			<div style="background: url('../../image/discover_b1.png') center no-repeat;background-size: contain;" onclick="goBack('discover01.html')"></div>
+			<div style="background: url('../../image/discover_b2.png') center no-repeat;background-size: contain;" onclick="goBack('discover02.html')"></div>
+			<div style="background: url('../../image/discover_b3.png') center no-repeat;background-size: contain;" onclick="goBack('discover03.html')"></div>
+			<div style="background: url('../../image/discover_b4.png') center no-repeat;background-size: contain;" onclick="goBack('discover04.html')"></div>
+		</div>
+	</div>
+	
+	<div style="background-color:#fff;line-height:30px;padding: 0 10px 10px 10px;margin-bottom: 10px;">
+		<div><span class="overhidden" style="width:75%">积分任性玩</span></div>
+		<div onclick="goBack('discover05.html')" style="background:#F9FDFC url('../../image/discover_b5.png') 85%  no-repeat;padding-left: 15%;;line-height: 60px;border-radius:5px;">&nbsp;</div>
+	</div>
+	
+	<div style="background-color:#fff;line-height:30px;padding: 0 10px 10px 10px;margin-bottom: 50px;">
+		<div><span class="overhidden" style="width:75%">积分资讯</span></div>
+		<div><img alt="" src="../../image/dis_ad.jpg" width="100%"></div>
+	</div>
+	 <footer class="page-footer fixed-footer" id="footer">
+		<ul>
+			<li>
+				<a href="../../index.html">
+					<img src="../../image/footer001.png"/>
+					<p>首页</p>
+				</a>
+			</li>
+			<li>
+				<a href="../index/market.html">
+					<img src="../../image/footer002.png"/>
+					<p>商超优惠</p>
+				</a>
+			</li>
+			<li class="active">
+				<a href="discover.html">
+					<img src="../../image/footer003.png"/>
+					<p>发现</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="../../image/footer004.png"/>
+					<p>我的</p>
+				</a>
+			</li>
+		</ul>
+	</footer>
+</body>
+<script type="text/javascript">
+function goBack(url){
+	document.location.href = url ;
+}
+</script>
+</html>

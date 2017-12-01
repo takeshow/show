@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>我的代金券</title>
+	<script src="../../js/base/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+	<link rel="stylesheet" href="../../css/jquery-weui.css">
+	<link rel="stylesheet" href="../../css/style.css">
+<style type="text/css">
+.shadow {
+   	width: 20%;
+   	margin: 0 auto;
+    height: 2px;
+    background: -webkit-radial-gradient(50% 50%, circle, #becece, rgba(221, 199, 199, 0.1) 30%, rgba(0, 0, 0, 0) 50%);
+}
+.myvoucher{
+    height:70px;
+    text-align: center;
+    border-bottom: 1px solid #F5F5F5;
+    background-color: #fff;
+    overflow: hidden;
+    color:#9B9B9B;
+}
+.myvoucher .label {
+    float: left;
+    width: 50%;
+    margin: 5px 0;
+}
+.myvoucher .label span {
+    display:block;
+    line-height: 30px
+}
+
+.myvoucher .label .sp2 {
+    font-weight:normal!important;
+}
+
+.myvoucher .active{
+    color:#000;
+}
+.myvoucher .active .sp2{
+    color:#FF9881;
+}
+
+.voucherlist .empty{
+	background: url('../../image/nonedata.png') center no-repeat;
+   	background-size: 60px;
+    height: 100px;
+}
+
+</style>
+</head>
+<body>
+	<div class="app-topbar">
+		<div class="left app-button" data-back="" onclick="goBack('../../index.html')"></div>
+		<div class="app-title">我的代金券</div>
+		<div class="right app-button" data-back="" onclick="goBack('acctdetail.html')">账单明细</div>
+	</div>
+	<div style="width: 100%; text-align: center;background-color: #fff;border-bottom: 1px solid #f2e6e6;padding-top: 50px;" onclick="redirect('page/index/myvoucher.html')">
+		<div style="height:80px;line-height: 100px;">
+			<span style="font-size:28px;">0</span>.00
+		</div>
+		<div class="shadow"></div>
+		<div style="font-size: 12px;line-height: 45px;color:#B9B9B9">代金券总额(元)</div>
+	</div>
+	<div>
+		<div class="myvoucher">
+			<div class="label active" onclick="myvoucher(this)" style="border-right: 1px solid #F5F5F5;"><span>通用代金券</span><span class="sp2">0.00</span></div>
+			<div class="label" onclick="myvoucher(this)"><span>唐久便利代金券</span><span class="sp2">0.00</span></div>
+		</div>
+		<div class="voucherlist"><div class="empty"></div><div style="color: #9B9B9B;font-size:13px;text-align:center;">暂无可用代金券</div></div>
+		<div style="font-size:13px;text-align:right;line-height:30px">查看不可用代金券></div>
+	</div>
+</body>
+<script type="text/javascript">
+function goBack(url){
+	document.location.href = url ;
+}
+function myvoucher(obj){
+	$(obj).siblings().removeClass("active");$(obj).addClass("active");
+}
+
+</script>
+</html>

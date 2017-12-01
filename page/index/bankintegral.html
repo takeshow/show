@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>银行积分</title>
+	<script src="../../js/base/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+	<link rel="stylesheet" href="../../css/jquery-weui.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<style type="text/css">
+	.pointlist{
+		background-color:#fff;
+		padding:0 5px; 
+		line-height:50px
+	}
+	.pointlist .BOC {
+		background: url('../../image/ico_BOC.png') 5% center no-repeat;
+		background-size: 30px;
+		padding-left: 50px;
+	}
+	.pointlist .XABANK {
+		background: url('../../image/ico_xacbank.png') 5% center no-repeat;
+		background-size: 30px;
+		padding-left: 50px;
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="app-topbar">
+		<div class="left app-button" data-back="" onclick="goBack('../../index.html')"></div>
+		<div class="app-title">银行积分</div>
+	</div>
+	<div class="pointlist">
+		<ul>
+			<li class='arrowrt'>
+				<div style="overflow:hidden;border-bottom:1px solid #eee;">
+					<div class="XABANK" style="width: 60%;float: left;">西安银行</div>
+					<div style="width: 40%;float: left;text-align: right;padding-right: 8%;color:#59CAC5;font-size:13px"><span class="itembtn" onclick="tocheck(this)">兑换说明</span></div>
+				</div>
+			</li>
+			<li class='arrowrt'>
+				<div style="overflow:hidden;border-bottom:1px solid #eee;color:#CCCCCC">
+					<div class="BOC" style="width: 60%;float: left;">中国银行</div>
+					<div style="width: 40%;float: left;text-align: right;padding-right: 8%;font-size:13px"><span class="itembtn" onclick="tocheck(this)">即将开通</span></div>
+				</div>
+			</li>
+		</ul>
+	</div>	
+	
+</body>
+<script type="text/javascript">
+function goBack(url){
+	document.location.href = url ;
+}
+</script>
+</html>
