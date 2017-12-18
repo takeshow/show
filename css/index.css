@@ -26,7 +26,7 @@ html,body {
     color: #333;
 }
 body{
-	background-color: #e8dede;
+	background-color: #f2ecec;
 }		
 li {
 	list-style: none;
@@ -224,7 +224,7 @@ img {
 
 .page-footer ul .active {
 	width: 25%;
-	background-color: #ec4d1c;
+	background-color: #FF7E00;
 }
 
 .page-footer ul li img {
@@ -320,4 +320,99 @@ img {
 .arrowrt{
 	background: 98% center url(../image/discuse.png) no-repeat;
     background-size: 8px 12px;
+}
+
+
+.simpleAlert {
+	position: fixed;
+	z-index: 1000;
+}
+
+.simpleAlertShelter {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	opacity: 0.3;
+	filter: alpha(opacity = 30);
+}
+
+.simpleAlertBody {
+	position: fixed;
+    display: none;
+    width: 80%;
+    height: 216px;
+    top: 20%;
+    margin: 0 10%;
+    opacity: 0;
+    border: 1px solid #948497;
+    background-color: #fff;
+}
+
+.simpleAlertBodyClose {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	top: 10px;
+	right: 10px;
+	padding: 5px;
+	cursor: pointer;
+	z-index: 9;
+}
+
+.simpleAlertBodyTitle {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	overflow-y: auto;
+	left: 0;
+	background-color: #FF7E00;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+}
+
+.simpleAlertBodyContent {
+	position: absolute;
+	top: 40%;
+	width: 96%;
+	height: 48px;
+	overflow-y: auto;
+	left: 2%;
+	text-align: center;
+	font-size: 18px;
+	color: #333;
+}
+
+.simpleAlertBtn {
+	position: absolute;
+	height: 34px;
+	bottom: 10%;
+	cursor: pointer;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	padding: 0 15px;
+}
+
+.simpleAlertBtn1 {
+	background-color: #FF7E00;
+	left: 20%;
+}
+
+.simpleAlertBtn2 {
+	background-color: #c4bbbb;
+	color: #333;
+	right: 20%;
+}
+
+.onlyOne {
+	height: 36px;
+	width: 40%;
+	margin:0 30%;
+	left: 0%!important;
 }

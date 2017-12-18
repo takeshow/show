@@ -1676,7 +1676,7 @@ i.icon.icon-prev {
   height: 8px;
   display: inline-block;
   border-radius: 100%;
-  background: #000;
+  background: #fff;
   opacity: 0.2;
 }
 button.swiper-pagination-bullet {

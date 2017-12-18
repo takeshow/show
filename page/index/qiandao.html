@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
+<title>签到</title>
+<script src="../../js/base/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="qiandao_style.css">
+<style type="text/css">
+.app-topbar {
+    z-index: 999;
+    background-color: #fff;
+    position: fixed;
+    height: 44px;
+    width: 100%;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.15);
+    box-shadow: inset 0 0 1px rgba(0,0,0,0.15);
+    top:0px
+}
+
+.app-topbar .app-button[data-back].left {
+    background-image: url('../../image/arrow_rt.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 12px 20px;
+    background-size: 12px 20px;
+    background-position: 8px center;
+    transform: rotate(180deg);
+}
+.app-topbar .app-title {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    line-height: 44px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bolder;
+}
+.app-topbar .app-button.left {
+    left: 0;
+}
+
+.app-topbar .app-button.right {
+    right: 0;
+    color:#2ABBB4
+}
+.app-topbar .app-button {
+    position: absolute;
+    bottom: 0;
+    padding: 0 16px;
+    height: 100%;
+    line-height: 44px;
+}
+
+</style>
+</head>
+<body>
+<div class="app-topbar" style="background-color: #2ABBB4;color:#fff;">
+		<div class="left app-button" data-back="" onclick="goBack('../../index.html')"></div>
+		<div class="app-title">每日签到</div>
+	</div>
+<div class="container" style="padding-top:44px">
+	<div class="row">
+		<div class="col-xs-12 clearPadding">
+			<div class=""><img src="../../image/qdBanner.jpg" style="display: block;max-width: 100%;height: auto;"></div>
+			
+			<div class="calendar">
+				<div class="calenbox">
+					<div id="calendar"></div>
+				</div>
+				<div style="margin-top:10px">
+                    <div class="qiandao-bottom">
+                        <div class="qiandao-rule-list">
+                            <h4>签到规则</h4>
+                            <p>首次签到获得0.05元现金奖励</p>
+                            <p>连续签到每天增加0.01元现金奖励</p>
+                            <p>连续签到15天及以上每天获得0.2元现金奖励</p>
+                        </div>
+                        <div class="qiandao-rule-list">
+                            <h4>其他说明</h4>
+                            <p>如果中间有一天间断未签到的，重先开始计算连续签到时间。</p>
+                            <p>连续签到获得奖励后分享到QQ空间、微信朋友圈后再获得一次奖励，每天只限分享一次。</p>
+                            <p>获得的奖励不能直接提现。</p>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="calendar.js"></script>
+<script>
+function goBack(url){
+	document.location.href = url ;
+}
+	function signIn() {
+		$(".maskbox").fadeIn();
+		$(".qdbox").fadeIn();
+		$(".maskbox").height($(document).height());
+	}
+	$(".maskbox").click(function() {
+		$(".maskbox").fadeOut();
+		$(".qdbox").fadeOut();
+	});
+	$(function() {
+		//ajax获取日历json数据
+		var signList = [{"signDay":"1"},{"signDay":"3"},{"signDay":"7"},{"signDay":"11"}];
+		calUtil.init(signList);
+	});
+</script>
+</body>
+</html>

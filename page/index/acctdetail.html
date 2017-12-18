@@ -22,10 +22,30 @@
 	.topBar .active span{
 		border-bottom:2px solid #53C8C3;
 	}
+	.voucherlist{
+		padding:10px 0;
+		background-color: #fff;
+	}
 	.voucherlist .empty{
 		background: url('../../image/nonedata.png') center no-repeat;
 	   	background-size: 60px;
 	    height: 100px;
+	}
+	
+	.tabHead .border {
+	    position: absolute;
+	    bottom: -1px;
+	    left: 0;
+	    z-index: 5;
+	    width: 33.3%;
+	    height: 4px;
+	    background: #ff6e2b;
+	    -ms-transition: all 0.3s ease-in-out;
+	    -webkit-transition: all 0.3s ease-in-out;
+	    transition: all 0.3s ease-in-out;
+	    -webkit-transform: scale(.5);
+	    -ms-transform: scale(.5);
+	    transform: scale(.5);
 	}
 	</style>
 </head>
@@ -34,7 +54,7 @@
 		<div class="left app-button" data-back="" onclick="goBack('myvoucher.html')"></div>
 		<div class="app-title">账单明细</div>
 	</div>
-	<div class="topBar" style="background-color: #fff;overflow: hidden;" id="pageC">
+	<div class="topBar" style="background-color: #fff;overflow: hidden;margin-top:44px;" id="pageC">
 		<ul>
 			<li onclick="tocheck(this)" class="active" id="1"><span style="display: inline-block;padding: 0 5px;">全部</span></li>
 			<li onclick="tocheck(this)" id="2"><span style="display: inline-block;padding: 0 5px;">收入</span></li>

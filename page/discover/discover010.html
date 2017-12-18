@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>首页</title>
+<script src="../../js/base/jquery.min.js" type="text/javascript"></script>
+<script src="../../js/base/main.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="../../css/index.css" />
+<link rel="stylesheet" href="../../css/jquery-weui.css">
+<link rel="stylesheet" href="../../css/style.css">
+<style type="text/css">
+</style>
+</head>
+<body>
+	<div class="app-topbar">
+		<div class="left app-button" data-back="" onclick="goBack('discover.html')"></div>
+		<div class="app-title">发现</div>
+	</div>
+	<div style="padding-top: 44px;">
+		<div class="market_list">
+			<ul>
+				<li onclick="goBack('discover01.html')">
+					<div class="posters">
+						<img src="../../image/ad01.jpg">
+					</div>
+					<div class="post-content">
+						<p class="tit">唐久便利</p>
+						<p class="act">
+							<span> <i class="hui">惠</i> <i class="quan">券</i>
+							</span>
+						</p>
+						<p class="space">
+							最近：橡树街区<span>1.3km</span>
+						</p>
+					</div></li>
+				<li>
+					<div class="posters">
+						<img src="../../image/ad03.jpg">
+					</div>
+					<div class="post-content onlyChoseAlert" id="dblChoseAlert">
+						<p class="tit">玖玖便利</p>
+						<p class="act">
+							<span> <i class="hui">惠</i> <i class="quan">券</i>
+							</span>
+						</p>
+						<p class="space">
+							最近：南大街55号<span>5.3km</span>
+						</p>
+					</div></li>
+				<li>
+					<div class="posters">
+						<img src="../../image/ad02.jpg">
+					</div>
+					<div class="post-content onlyChoseAlert">
+						<p class="tit">安达便利</p>
+						<p class="act">
+							<span> <i class="hui">惠</i> <i class="quan">券</i>
+							</span>
+						</p>
+						<p class="space">
+							最近：橡树街区<span>1.3km</span>
+						</p>
+					</div></li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+function goBack(url){
+	document.location.href = url ;
+}
+</script>
+</html>

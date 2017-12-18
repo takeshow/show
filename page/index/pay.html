@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>付款</title>
+	<script src="../../js/base/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+	<link rel="stylesheet" href="../../css/jquery-weui.css">
+	<link rel="stylesheet" href="../../css/style.css">
+<style type="text/css">
+body{
+	background-color: #2ABBB4;
+}	
+.app-topbar {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.acctlist{
+	margin-top:80px;
+}
+.itemlist {
+	position: relative;
+	background-color: #fff;
+	margin: 10px;
+}
+
+.itemlist:after {
+	position: absolute;
+	content: '';
+	width: 16px;
+	height: 16px;
+	background: #2ABBB4;
+	top: 42px;
+	right: -8px;
+	border-radius: 100%;
+}
+
+.itemlist:before {
+	position: absolute;
+	content: '';
+	width: 16px;
+	height: 16px;
+	background: #2ABBB4;
+	top: 42px;
+	left: -8px;
+	border-radius: 100%;
+}
+.qrcode{
+    width: 50%;
+    margin: 0 25%;
+}
+</style>
+</head>
+<body>
+	<div class="app-topbar" style="background-color: #2ABBB4;color:#fff;">
+		<div class="left app-button" data-back="" onclick="goBack('../../index.html')"></div>
+		<div class="app-title">付款</div>
+	</div>
+	
+	<div class="acctlist">
+			<div class="itemlist">
+				<div style="text-align: center;line-height: 50px;border-bottom: 1px dashed #ddd3d3;">请向收银员出示</div>
+				<div style="overflow:hidden;padding:15px 7% 0 7%">
+					<img alt="" src="../../image/tiaoxing.jpg" width="100%">
+				</div>
+				<div style="padding-top:10px;">
+					<img alt="" src="../../image/qrcode.png" class="qrcode">
+				</div>
+				
+				<div style="text-align: center;padding:30px 0;font-size: 12px;">
+					<img alt="" src="../../image/refresh.png" width="20px" style="display: inline-block;">
+					<div style="display: inline-block;">每分钟自动刷新</div>
+				</div>
+			</div>
+	</div>
+	
+</body>
+<script type="text/javascript">
+function goBack(url){
+	document.location.href = url ;
+}
+function tocheck(obj){
+	$(obj).text("去兑换");
+	$("#jf").text("13534").css({"color":"#FA795E"});
+	$("#kjf").text("135.34").css({"color":"#FA795E"});
+}
+
+</script>
+</html>
