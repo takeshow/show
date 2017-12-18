@@ -93,6 +93,14 @@
 		.tui-btn:hover,.tui-btn:focus,.tui-btn:active{
 			background-color: #48c9b0;
 		}
+		
+		.icon-jfpay{
+			width:30px;
+			height:30px;
+			display:inline-block;	
+			background: url('../../image/nav_menu_bank.png') center no-repeat;
+		   	background-size: 100%;
+		}
 		.icon-wxpay{
 			width:30px;
 			height:30px;
@@ -134,7 +142,14 @@
    			</ul>
    		</div>
     	<div class="addlist">
-			<div class="sorder-list shopcar-checkd">
+    			<div class="sorder-list shopcar-checkd">
+				<i class="icon-jfpay"></i>
+				<div class="zuo">
+					<p class="tit">积分支付</p>
+					<p class="fu-tit">福利来袭</p>
+				</div>							
+			</div>
+			<div class="sorder-list">
 				<i class="icon-wxpay"></i>
 				<div class="zuo">
 					<p class="tit">微信支付</p>
@@ -153,7 +168,7 @@
    			提示：请在24小时内完成在线支付，逾期将视为订单无效
    		</div>
     </div>
-    <div class="tui-btn">确认支付</div>
+    <div class="tui-btn" onclick="javascript:alert('敬请期待')">确认支付</div>
 </body>
 <script type="text/javascript">
 (function(){
