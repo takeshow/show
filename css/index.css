@@ -190,8 +190,8 @@ img {
 /* footer */
 .page-footer {
 	width: 100%;
-	box-shadow: 0 -2px 4px #d7d7d7;
-	background-color: #6d6957;
+	box-shadow: 0 -2px 4px #ffffff;
+	background-color: #ffffff;
 }
 
 .fixed-footer {
@@ -219,12 +219,12 @@ img {
 }
 
 .page-footer ul .active a p {
-	color: #fff;
+	color: #FF7E00;
 }
 
 .page-footer ul .active {
 	width: 25%;
-	background-color: #FF7E00;
+	background-color: #FFFFFF;
 }
 
 .page-footer ul li img {
@@ -233,13 +233,13 @@ img {
 
 .page-footer ul li p {
 	font-size: .4rem;
-	color: #fff;
+	color: #c3c4c3;
 	margin-top: 3%;
 }
 
 .page-footer1 ul li p {
 	font-size: .9em;
-	color: #fff;
+	color: #FF7E00;
 	margin-top: 3%;
 }
 
