@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>城市道路停车</title>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+<style type="text/css">
+.yui-div-leftCarLi {
+	width: 50%;
+	float: left;
+	padding: 18px;
+}
+
+.yui-div-outCarLi {
+	background: url('parkCarlicense_small.png') 0 0 no-repeat;
+	width: 100%;
+	height: 65px;
+	position: relative;
+	margin: 0 auto;
+	background-size: 100% 65px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+}
+
+.yui-span-carLicense {
+	font-size: 28px;
+	color: #fff;
+	line-height: 65px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	vertical-align: middle;
+}
+
+.yui-history {
+	text-align: center;
+	font-size: 12px;
+	line-height: 35px;
+	width: 75%;
+	background-color: #5BBFFF;
+	color: white;
+	margin: 0 auto;
+}
+
+.yui-nearPark {
+	text-align: center;
+	font-size: 12px;
+	line-height: 35px;
+	width: 75%;
+	background-color: #FF5662;
+	color: white;
+	margin: 0 auto;
+}
+
+.yui-out-btn {
+	width: 50%;
+	height: 40px;
+	float: left;
+}
+
+</style>
+</head>
+<body data-page-vers="1_1_1" id="pageA">
+	<div id="pageB">
+		<img src="parkCarTitle_new.png" style="width: 100%;">
+		<div class="form">
+			<div class="title" style="margin-bottom: 5px;color: #AEAEAE">
+				我的车牌
+				<div onclick="" style="float: right;padding-right:10px;"><img src="addCar.png"></div>
+			</div>
+			<div class="list" id="carinfo" style="margin: 0px; border-radius: initial;overflow: hidden;width: 100%;">
+				<div class="yui-div-leftCarLi">
+					<div class="yui-div-outCarLi">
+						<span class="yui-span-carLicense">陕A888888</span>
+					</div>
+				</div> 
+			</div> 
+		</div>
+		
+		<div class="form">
+			<div class="title" style="margin-bottom: 5px; color: #AEAEAE">当前停车信息</div>
+			<div class="list" style="margin: 0px; border-radius: initial;">
+				<ul id="listinfo" style="padding-left: 10px">
+					<li>
+						<div> 
+							<span style="width: 30%">暂无信息</span>
+						</div>
+					</li> 
+				</ul>
+			</div>
+		</div>
+
+		<!-- div class="form" style="color: #fff; padding-top: 30px;">
+			<div class="yui-out-btn">
+				<div class="yui-history" onclick="">历史停车查询</div>
+			</div>
+			<div class="yui-out-btn">
+				<div class="yui-nearPark" onclick="">附近停车场</div>
+			</div>
+		</div> -->
+		<div style="float: left; margin-top: 12px; font-size: 10px; color: red;padding: 0px 15px;">
+			<p>温馨提示：</p>
+			<p>　　1、收费员点击POS停入后，手机收到停入信息的时间需要10-30秒，您可以先离场，缴费前查询即可！</p>
+			<p>　　2、如收费员未收到缴费成功消息，出示缴费成功页面给收费员即可离场，如有问题请拨打停车中心投诉电话029-86119888。</p>
+		</div>
+		
+	</div>
+</body>
+</html>
